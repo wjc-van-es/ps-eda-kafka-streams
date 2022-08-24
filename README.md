@@ -25,10 +25,10 @@ the topic. This example code is still build and run as small Java applications e
 on your local computer. Presumably with help from your favorite IDE. (So this part isn´t deployed to docker containers yet).
 
 The Kafka cluster the example code communicates with, however, is entirely deployed as docker containers:
-- one container with a single Apache kafka broker, listening on port 2181,
-- one container with a single Zookeeper instance, listening on port 9092
+- one container with a single Apache kafka broker, listening on port 9092,
+- one container with a single Zookeeper instance, listening on port 2181,
 - one container with the Confluent schema-registry server, listening on port 8081.
-- one container with the Confluent ksqldb-server, listening on port 8088.
+- one container with the Confluent ksqldb-server, listening on port 8088,
 - one container with the ksqldb-cli
 
 ---
