@@ -15,7 +15,7 @@
         <module>fraud-detection-interface</module>
         <module>transactions-producer</module>
         <module>kafka-streams</module>
-        <!--<module>background-producer</module>-->
+        <module>background-producer</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -90,6 +90,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.3.0</version>
                     <executions>
                         <execution>
                             <phase>generate-sources</phase>
