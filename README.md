@@ -68,13 +68,13 @@ Java classes that are generated from an AVRO schema, [avro/order_schema.avsc](fr
  using the `org.apache.avro:avro-maven-plugin`.
 
 These Java classes are part of the messages put together, serialized to an AVRO byte stream and send to the topic by the
-producer and then read from the topic by the consumer. So both the user-tracking-consumer and the user-tracking-producer
-module depend on the user-tracking-interface module.
+producers and then read from the topic by the consumers. So the transactions-producer, background-producer and the
+kafka-streams modules depend on the fraud-detection-interface module.
 
-In the original example the Java classes were generated manually on the command line and copied as model packages in
-both the producer and the stream API client maven module.
+In the original example the Java classes were generated manually on the command line and copied as model packages into
+the other maven modules.
 
-My introduction of the separate user-tracking-interface maven module
+My introduction of the separate fraud-detection-interface maven module
 - makes running the example less complex as the generated Java classes are created automatically as part of a maven build
   of the project.
 - reduces code duplication.
